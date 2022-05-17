@@ -6,7 +6,7 @@ provider "aws" {
 
 # Create a module for collecting cloudwatchmetric filter
 resource "aws_cloudwatch_log_metric_filter" "cloudwatch" {
-  name           = "MyAppAccessCount"
+  name           = var.name
   pattern        = ""
   log_group_name = aws_cloudwatch_log_group.dada.name
 
@@ -18,5 +18,5 @@ resource "aws_cloudwatch_log_metric_filter" "cloudwatch" {
 }
 
 resource "aws_cloudwatch_log_group" "dada" {
-  name           = "MyApp/access.log"
+  name           = var.logname
 }
