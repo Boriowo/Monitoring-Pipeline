@@ -5,17 +5,18 @@ provider "aws" {
 
 module "cloudwatch"{
     source       = "./Cloudwatch"
-    loggroupname = "Ismile Cloudwatch"
+    name         = "Name"
+    logname      = "MyApp/access.log"    
 }
 
 module "cloudtrail"{
     source       = "./Cloudtrail"
-    name         = "Ismile Cloudtrail"
-    s3bucket     = "Ismile s3"
-    key          = "Ismile Key"
+    name         = "Cloudtrail"
+    s3bucket     = "s3"
+    key          = "Key"
 }
 
 module "Dashboard"{
     source       = "./Dashboard"
-    dashboard    = "Ismile Dashboard"
+    dashboard    = "Dashboard"
 }

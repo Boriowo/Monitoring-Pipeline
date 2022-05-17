@@ -5,7 +5,7 @@ provider "aws" {
 
 # Create a Cloudwatch Dashboard
 resource "aws_cloudwatch_dashboard" "main" {
-  dashboard_name  = "my-dashboard"
+  dashboard_name  = var.dashboard
 
   dashboard_body = <<EOF
 {

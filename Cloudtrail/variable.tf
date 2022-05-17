@@ -12,3 +12,7 @@ variable "key" {
     type = string
     description = "The Access Key"
 }
+
+variable "policy" {
+    
+}
