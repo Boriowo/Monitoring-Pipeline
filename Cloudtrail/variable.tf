@@ -7,12 +7,3 @@ variable "s3bucket" {
     type = string
     description = "The S3 Bucket"
 }
-
-variable "key" {
-    type = string
-    description = "The Access Key"
-}
-
-variable "policy" {
-    
-}

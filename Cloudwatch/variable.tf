@@ -5,6 +5,5 @@ variable "name"{
 
 variable "logname"{
     type = string
-    source = "MyApp/access.log"
-    description = "The Log group name"
+    description = "MyApp/access.log"
 }

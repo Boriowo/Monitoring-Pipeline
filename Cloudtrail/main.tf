@@ -1,5 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
+  region = "aws-east-1"
 }
 
 data "aws_caller_identity" "current" {}
