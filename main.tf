@@ -13,14 +13,13 @@ module "cloudwatch"{
 module "cloudtrail"{
     source       = "./Cloudtrail"
     name         = "Cloudtrail"
-    s3bucket     = "s3"
+    s3bucket     = "s3-Bucket"
 }
 
 module "Dashboard"{
     source       = "./Dashboard"
     dashboard    = "Dashboard"
-    dashboard_body= 
-  <<EOF
+    dashboard_body= <<EOF
 {
   "widgets": [
     {
